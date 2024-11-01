@@ -1,4 +1,4 @@
-# GCN-Transformer
+# SS-GLMP
 
 This is the implementation code for the paper "Enhancing navigation safety for MASS: A Graph-based learning model for motion perception in multi-ship encounters".
 
