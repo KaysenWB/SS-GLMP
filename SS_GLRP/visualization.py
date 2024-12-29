@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 
 # args
-map_root = '/home/user/Documents/Yangkaisen/GCN_Informer_test/map/map_Aarea.png'
-Preds = np.load('/output_f4_32/TCNN/Preds.npy')
-Reals = np.load('/output_f4_32/TCNN/Reals.npy')
+map_root = ''
+Preds = np.load('/output_f4_32/GLRP/Preds.npy')
+Reals = np.load('/output_f4_32/GLRP/Reals.npy')
 st = 0  # how many ship to visual
 ed = 20
 K = 20
