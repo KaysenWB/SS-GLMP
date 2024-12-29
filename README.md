@@ -4,6 +4,8 @@ This is the implementation code for the paper "Enhancing Risk Perception by Inte
 
 Implementation and performance comparison of several common deep learning networks for ship motion prediction, including LSTM, GRU, Seq2Seq, TCN, Transformer, and our network GLMP. The input data are processed AIS data containing motion information and adjacency matrix, processed with reference to https://github.com/KaysenWB/AIS-Process.git.
 
+In addition we present the code for calculating and measuring the error for DCPA and TCPA.
+
 
 
 # Research problem
