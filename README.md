@@ -6,7 +6,9 @@ Implementation and performance comparison of several common deep learning networ
 
 
 
-**Research problem: integrating ship interactions to enhance motion prediction and risk perception performance**
+# Research problem: 
+integrating ship interactions to enhance motion prediction and risk perception performance.
+
 ![Figure](https://github.com/KaysenWB/SS-GLMP/blob/main/Figures/Figure01.jpg?raw=true)
 
 **Overview of this work**
