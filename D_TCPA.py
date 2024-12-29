@@ -281,8 +281,8 @@ if __name__ == "__main__":
 
 
     # read
-    Reals = np.load('/Users/yangkaisen/MyProject/GTGF_ship/output_f4_32/GT/Reals.npy')
-    Preds = np.load('/Users/yangkaisen/MyProject/GTGF_ship/output_f4_32/GT/Preds.npy')
+    Reals = np.load('/Users/yangkaisen/MyProject/GLRP_ship/output_f4_32/GT/Reals.npy')
+    Preds = np.load('/Users/yangkaisen/MyProject/GLRP_ship/output_f4_32/GT/Preds.npy')
     pred_len, _, ff = Preds.shape
 
     # inverse
@@ -290,8 +290,8 @@ if __name__ == "__main__":
     Reals =  Reals[pred_len:, :, :ff]
     Preds =  Preds[:, :, :ff]
 
-    # filter_data
-    keep = [1, 2, 9, 10]#+ [i for i in range(90,93)] #[1, 2,  4, 9, 10]#[18, 31, 43, 58, 72, 81, 107 # [46, 81, 103, 90], #backup 60, #46#, 43, 56, 82
+    # filter_data if single sence
+    keep = [1, 2, 9, 10] 
     Reals, Preds = filter_data(Reals, Preds, keep)
 
     # infer sog and cog by tra
@@ -314,5 +314,5 @@ if __name__ == "__main__":
 
     # save data of a scene
     save_risk_of_a_scene(dcpa_real, dcpa_gt, tcpa_real, tcpa_gt)
-    print(';')
+
 
