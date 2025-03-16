@@ -122,7 +122,8 @@ class GLRP(nn.Module):
         # data
         batch_in = inputs[0][:self.obs_length, :, :self.feats_out]
         tar_y = inputs[0][self.obs_length:, :, :self.feats_out]
-        adj = inputs[2][self.obs_length]
+        adj = inputs[2][:self.obs_length]
+        adj = torch.mean(adj, dim=0)
 
         # ADJ
         mina,maxa = adj.min(),adj.max()
